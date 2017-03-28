@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>家庭智能监控系统</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+<body style="margin: 50px;" class="talbe-responsive">
+
+<!-- <table class="table table-striped"></table> -->
+<!-- <table class="table table-striped table-bordered"> -->
+
+<form class="form-horizontal" style="text-align:left">
+	<div class="form-group">
+		<label class="col-sm-12 control-label" style="text-align:left">家庭智能监控系统-查询管理</label>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-1 control-label">摄像头编号</label>
+		<div class="col-sm-2">
+			<input type="text" class="form-control" placeholder="请输入摄像头编号"></input>
+		</div>
+		<label class="col-sm-1 control-label">拍摄日期</label>
+		<div class="col-sm-2">
+			<select class="form-control">
+				<option>今天</option>
+				<option>昨天</option>
+				<option>近3天</option>
+				<option>本周</option>
+				<option>近7天</option>
+				<option>近14天</option>
+				<option>本月</option>
+				<option>上月</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-1 control-label">视频名称</label>
+		<div class="col-sm-2">
+			<input type="text" class="form-control" placeholder="请输入视频名称"></input>
+		</div>
+		<label class="col-sm-1 control-label">视频大小</label>
+		<div class="col-sm-2">
+			<input type="text" class="form-control" placeholder="请输入视频大小"></input>
+		</div>
+		<div class="col-sm-2">
+			<button class="btn btn-info btn-sm">查询</button>
+		</div>
+	</div>
+</form>
+
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th>摄像头编号</th>
+			<th>拍摄日期</th>
+			<th>视频名称</th>
+			<th>视频大小</th>
+			<th>视频位置</th>
+			<th>操作</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="active">
+			<td>ZTE-Memo-001</td>
+			<td>2016年4月3日 13:05:22</td>
+			<td>ZTEMemo00120160403001</td>
+			<td>301M</td>
+			<td>/root/usr/vedio/ZTEMemo001</td>
+			<td><button class="btn btn-link">点击查看</button><button class="btn btn-link">删除</button></td>
+		</tr>
+		<tr class="info">
+			<td>D606-1080P-002</td>
+			<td>2016年5月1日 09:44:31</td>
+			<td>D6061080P00220160501001</td>
+			<td>795M</td>
+			<td>/root/usr/vedio/D6061080P002</td>
+			<td><button class="btn btn-link">点击查看</button><button class="btn btn-link">删除</button></td>
+		</tr>
+		<tr class="success">
+			<td>EZVIZ-C6-003</td>
+			<td>2016年4月26日 16:47:03</td>
+			<td>EZVIZC600320160426002</td>
+			<td>201M</td>
+			<td>/root/usr/vedio/EZVIZC6003</td>
+			<td><button class="btn btn-link">点击查看</button><button class="btn btn-link">删除</button></td>
+		</tr>
+		<tr class="warning">
+			<td>MI-004</td>
+			<td>2016年6月9日 08:30:05</td>
+			<td>MI00420160609016</td>
+			<td>1.04G</td>
+			<td>/root/usr/vedio/MI004</td>
+			<td><button class="btn btn-link">点击查看</button><button class="btn btn-link">删除</button></td>
+		</tr>
+		<tr class="danger">
+			<td>Lenovo-Snowman-005</td>
+			<td>2016年5月4日 19:45:46</td>
+			<td>LenovoSnowman00520160504102</td>
+			<td>60M</td>
+			<td>/root/usr/vedio/LenovoSnowman005</td>
+			<td><button class="btn btn-link">点击查看</button><button class="btn btn-link">删除</button></td>
+		</tr>
+		<tr class="sr-only">
+			<td>HIKVISION-C3C-006</td>
+			<td>2016年5月19日 18:01:35</td>
+			<td>HIKVISIONC3C00620160519062</td>
+			<td>425M</td>
+			<td>/root/usr/vedio/HIKVISIONC3C006</td>
+			<td><button class="btn btn-link">点击查看</button><button class="btn btn-link">删除</button></td>
+		</tr>
+	</tbody>
+</table>
+
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
